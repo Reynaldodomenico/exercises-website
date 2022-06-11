@@ -4,6 +4,7 @@ import {Box} from '@mui/material';
 import Exercises from "../components/Exercises";
 import HeroBanner from "../components/HeroBanner";
 import SearchExercises from "../components/SearchExercises";
+import HorizontalScrollBar from "../components/HorizontalScrollBar";
 
 const Home = () => {
   return (

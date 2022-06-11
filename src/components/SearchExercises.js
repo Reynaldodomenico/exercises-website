@@ -2,10 +2,12 @@ import React,{useEffect, useState} from 'react';
 import{ Box, Button, Stack, TextField, Typography} from '@mui/material';
 
 import { excerciseOptions,fetchData } from '../utils/fetchData';
+import HorizontalScrollBar from './HorizontalScrollBar';
 
 const SearchExercises = () => {
-    const [search, setSearch] = useState('')
-    const [exercises, setExercises] = useState([])
+    const [search, setSearch] = useState('');
+    const [exercises, setExercises] = useState([]);
+    const [bodyParts, setBodyParts] = useState([]);
 
     useEffect(() => {
         const fetchExercisesData = async () => {
